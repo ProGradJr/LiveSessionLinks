@@ -18,7 +18,7 @@ $("#submit-form").submit((e) => {
 })
 
 var form1 = document.getElementById("form1")
-var form2 = document.getElementById("form2")
+var form2;
 var form3 = document.getElementById("form3")
 var form4 = document.getElementById("form4")
 var form5 = document.getElementById("form5")
@@ -33,12 +33,12 @@ var form12 = document.getElementById("form12")
 const container = document.querySelector(".container")
 const container2 = document.querySelector(".container2")
 
-document.querySelector(".button").onclick = () => {
+document.querySelector(".submitButton").onclick = () => {
     container.style.display = "none"
     container2.style.visibility = "visible"
     document.getElementById("sub1").innerHTML = form1.value
     console.log(form1)
-    document.getElementById("sub2").innerHTML = form2.value
+    document.getElementById("sub2").innerHTML = form2
     console.log(form2)
     document.getElementById("sub3").innerHTML = form3.value
     console.log(form3)
@@ -60,5 +60,232 @@ document.querySelector(".button").onclick = () => {
     console.log(form11)
     document.getElementById("sub12").innerHTML = form12.value
     console.log(form12)
+    document.getElementById("sub13").innerHTML = form13.value
+    console.log(form12)
+    document.getElementById("sub14").innerHTML = form14.value
+    console.log(form12)
+    document.getElementById("sub15").innerHTML = form15.value
+    console.log(form12)
+    document.getElementById("sub16").innerHTML = form16.value
+    console.log(form12)
+    document.getElementById("sub17").innerHTML = form17.value
+    console.log(form12)
+    document.getElementById("sub18").innerHTML = form18.value
+    console.log(form12)
+    document.getElementById("sub19").innerHTML = form19.value
+    console.log(form12)
+    document.getElementById("sub20").innerHTML = form20.value
+    console.log(form12)
+}
 
+
+var namesBySquad = {
+    Squad43: [
+        "Aarya D",
+        "Aditya Bachepallikar",
+        "Kavya",
+        "Arya Anand",
+        "Arav Tikkoo",
+        "Nenika",
+        "Mayank Agarwal",
+        "Atharv Bhagat",
+        "Shrreya",
+        "Tanve",
+        "Hiranmayi",
+        "Vaishnav",
+    ],
+    Squad44: [
+        "Nidhi",
+        "Anvi Gupta",
+        "Rudra Kumar",
+        "Shoban",
+        "Eshwar",
+        "Mahima Sree",
+        "Poorvika Sree",
+        "Sukirtha",
+        "Eshan venkatesh",
+        "Mahetha",
+        "Skandakumar Karttikeyan",
+    ],
+    Squad45: [
+        "Anshul baddi",
+        "Kavinisha",
+        "Ananya Y Deshmane",
+        "Ayden",
+        "Anderson",
+        "Shreya Sreenivasa",
+        "Veditraghav Sairi",
+        "Akhilan Ashok",
+        "Anirudh Ganesan",
+        "Abhinav Ganesan",
+    ],
+    Squad46: [
+        "Umang Mathur",
+        "Nivedita Hanil",
+        "Lewin Anthony",
+        "Vihaan Agrawal",
+        "Meghnaa",
+        "Akshika",
+        "Prince Puthuran",
+        "Advait Sumesh",
+    ],
+    Squad47: [
+        "Mihika kumar",
+        "Nihar",
+        "Maitri Chakraborty",
+        "Saikrishna",
+        "Aadi vaishnav",
+        "Dhruv Vinod",
+        "Rittvik Arrvind",
+    ],
+    Squad48: [
+        "Eshaan Ali Mashrook",
+        "Saamir",
+        "Thanikan",
+        "Aman Bafna",
+        "Akankshya",
+        "Leena Abigail Dany",
+    ],
+    Squad49: [
+        "Fathima Zahra",
+        "Siddharth",
+        "Vijay Sathappan Narayanan",
+        "Ashwin",
+        "Ashutosh Patnaik",
+        "Tuvijeet Sharma",
+        "Miruthula Devi",
+        "Shlok",
+        "Shashvati Mahesh Kumar",
+        "Sharvari Mahesh Kumar",
+        "Dhanush S S",
+        "Himansh Ahuja",
+    ],
+    Squad50: [
+        "Atmikha",
+        "Luis Gael Rojo Trejo",
+        "Avigat Gupta",
+        "Amresh Patnaik",
+        "Anagha N",
+        "Sidharth Sudheer",
+        "Veer Banerjee",
+        "Pinnenti Sreepooja",
+        "Ishaan Kurian",
+        "Aditya Singh",
+        "Sanskriti Amidesh",
+    ],
+    Squad51: ["Mahika", "Pranshu", "Vaidehi", "Isha"],
+    Squad52: [
+        "Neev",
+        "Aanya M Bafna",
+        "Ajay Prasanth",
+        "Sanchan",
+        "Hriya",
+        "Advik H",
+        "Sharique",
+        "Vani Jain",
+        "Kamlesh Narayanan",
+        "Sakthivelu",
+    ],
+};
+
+// function makeSubmenu(value) {
+//     if (value.length == 0)
+//         document.getElementById("name").innerHTML = "<option></option>";
+//     else {
+//         var squadOptions = "";
+//         for (squadId in namesBySquad[value]) {
+//             squadOptions += "<option>" + namesBySquad[value][squadId] + "</option>";
+//         }
+//         document.getElementById("name").innerHTML = squadOptions;
+//     }
+// }
+
+document.querySelector("#getLink").onclick = () => {
+    var week = document.getElementById("week")
+    var selectedWeek = week.options[week.selectedIndex].value;
+    switch (selectedWeek) {
+        case "Week 1":
+            // resetAll();
+            document.querySelector("#linkIP1").style.visibility = "visible"
+            document.getElementById("sub1").innerHTML = form1.value
+            console.log(form1)
+            break;
+        case "Week 2":
+            // resetAll();
+            document.querySelector("#linkIP2").style.visibility = "visible"
+            break;
+        case "Week 3":
+            // resetAll();
+            document.querySelector("#linkIP3").style.visibility = "visible"
+            break;
+        case "Week 5":
+            // resetAll();
+            document.querySelector("#linkIP4").style.visibility = "visible"
+            break;
+        case "Week 6":
+            // resetAll();
+            document.querySelector("#linkIP5").style.visibility = "visible"
+            break;
+        case "Week 7":
+            // resetAll()
+            document.querySelector("#linkIP6").style.visibility = "visible"
+            break;
+        case "Week 9":
+            // resetAll();
+            document.querySelector("#linkIP7").style.visibility = "visible"
+            break;
+        case "Week 10":
+            // resetAll();
+            document.querySelector("#linkIP8").style.visibility = "visible"
+            break;
+        case "Week 11":
+            // resetAll();
+            document.querySelector("#linkIP9").style.visibility = "visible"
+            break;
+        case "Week 12":
+            // resetAll();
+            document.querySelector("#linkIP10").style.visibility = "visible"
+            break;
+        case "Week 2 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP11").style.visibility = "visible"
+            break;
+        case "Week 3 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP12").style.visibility = "visible"
+            break;
+        case "Week 4 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP13").style.visibility = "visible"
+            break;
+        case "Week 5 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP14").style.visibility = "visible"
+            break;
+        case "Week 6 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP15").style.visibility = "visible"
+            break;
+        case "Week 7 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP16").style.visibility = "visible"
+            break;
+        case "Week 9 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP17").style.visibility = "visible"
+            break;
+        case "Week 10 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP18").style.visibility = "visible"
+            break;
+        case "Week 11 - Prework":
+            // resetAll();
+            document.querySelector("#linkIP19").style.visibility = "visible"
+            break;
+    }
+}
+
+function makeSubmenu(value) {
+    form2 = value;
+    console.log(value)
 }
