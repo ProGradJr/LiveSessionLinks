@@ -36,24 +36,24 @@ const container2 = document.querySelector(".container2")
 document.querySelector(".submitButton").onclick = () => {
     container.style.display = "none"
     container2.style.visibility = "visible"
-    document.getElementById("sub1").innerHTML = form1.value
-    console.log(form1)
-    document.getElementById("sub2").innerHTML = form2
-    console.log(form2)
+    // document.getElementById("sub1").innerHTML = form1
+    // console.log(form1)
+    // document.getElementById("sub2").innerHTML = form2
+    // console.log(form2)
     document.getElementById("sub3").innerHTML = form3.value
-    console.log(form3)
+    // console.log(form3)
     document.getElementById("sub4").innerHTML = form4.value
-    console.log(form4)
+    // console.log(form4)
     document.getElementById("sub5").innerHTML = form5.value
-    console.log(form5)
+    // console.log(form5)
     document.getElementById("sub6").innerHTML = form6.value
-    console.log(form6)
+    // console.log(form6)
     document.getElementById("sub7").innerHTML = form7.value
-    console.log(form7)
+    // console.log(form7)
     document.getElementById("sub8").innerHTML = form8.value
-    console.log(form8)
+    // console.log(form8)
     document.getElementById("sub9").innerHTML = form9.value
-    console.log(form9)
+    // console.log(form9)
     document.getElementById("sub10").innerHTML = form10.value
     console.log(form10)
     document.getElementById("sub11").innerHTML = form11.value
@@ -188,19 +188,23 @@ var namesBySquad = {
     ],
 };
 
-// function makeSubmenu(value) {
-//     if (value.length == 0)
-//         document.getElementById("name").innerHTML = "<option></option>";
-//     else {
-//         var squadOptions = "";
-//         for (squadId in namesBySquad[value]) {
-//             squadOptions += "<option>" + namesBySquad[value][squadId] + "</option>";
-//         }
-//         document.getElementById("name").innerHTML = squadOptions;
-//     }
-// }
+function makeSubmenu(value) {
+    if (value.length == 0)
+        document.getElementById("name").innerHTML = "<option></option>";
+    else {
+        var squadOptions = "";
+        for (squadId in namesBySquad[value]) {
+            squadOptions += "<option>" + namesBySquad[value][squadId] + "</option>";
+        }
+        document.getElementById("name").innerHTML = squadOptions;
+    }
 
+}
+console.log(namesBySquad.selectedIndex)
 document.querySelector("#getLink").onclick = () => {
+    var name = document.getElementById("name")
+    var squad = document.getElementById("squad")
+    console.log(name + " " + squad)
     var week = document.getElementById("week")
     var selectedWeek = week.options[week.selectedIndex].value;
     switch (selectedWeek) {
@@ -285,7 +289,7 @@ document.querySelector("#getLink").onclick = () => {
     }
 }
 
-function makeSubmenu(value) {
-    form2 = value;
-    console.log(value)
-}
+// function makeSubmenu(value) {
+//     form2 = value;
+//     console.log(value)
+// }
