@@ -208,45 +208,45 @@ document.querySelector("#getLink").onclick = () => {
     var week = document.getElementById("week")
     var selectedWeek = week.options[week.selectedIndex].value;
     switch (selectedWeek) {
-        case "Week 1":
+        case "Week 1 - Live Session":
             // resetAll();
             document.querySelector("#linkIP1").style.visibility = "visible"
             document.getElementById("sub1").innerHTML = form1.value
             console.log(form1)
             break;
-        case "Week 2":
+        case "Week 2 - Live Session":
             // resetAll();
             document.querySelector("#linkIP2").style.visibility = "visible"
             break;
-        case "Week 3":
+        case "Week 3 - Live Session":
             // resetAll();
             document.querySelector("#linkIP3").style.visibility = "visible"
             break;
-        case "Week 5":
+        case "Week 5 - Live Session":
             // resetAll();
             document.querySelector("#linkIP4").style.visibility = "visible"
             break;
-        case "Week 6":
+        case "Week 6 - Live Session":
             // resetAll();
             document.querySelector("#linkIP5").style.visibility = "visible"
             break;
-        case "Week 7":
+        case "Week 7 - Live Session":
             // resetAll()
             document.querySelector("#linkIP6").style.visibility = "visible"
             break;
-        case "Week 9":
+        case "Week 9 - Live Session":
             // resetAll();
             document.querySelector("#linkIP7").style.visibility = "visible"
             break;
-        case "Week 10":
+        case "Week 10 - Live Session":
             // resetAll();
             document.querySelector("#linkIP8").style.visibility = "visible"
             break;
-        case "Week 11":
+        case "Week 11 - Live Session":
             // resetAll();
             document.querySelector("#linkIP9").style.visibility = "visible"
             break;
-        case "Week 12":
+        case "Week 12 - Live Session":
             // resetAll();
             document.querySelector("#linkIP10").style.visibility = "visible"
             break;
