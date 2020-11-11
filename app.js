@@ -186,6 +186,33 @@ var namesBySquad = {
         "Kamlesh Narayanan",
         "Sakthivelu",
     ],
+    Squad53: ["Gahana Shashidhar",
+        "Arnav",
+        "Syed Hasib",
+        "Vignesh vinod",
+        "Eden Edwards",
+        "Aarushi Ranjan",
+        "N S Nikkilesh Kumar",
+        "Vihaan"
+    ],
+    Squad54: ["Aryan Gupta",
+        "Rishab Menon",
+        "VEER ZORAWAR",
+        "Shrishti Ture",
+        "Shree .s. baddi",
+        "N S Shrish Kumar"
+    ],
+    Squad55: ["Bhoomi Kunjwal",
+        "Mourya G S",
+        "Saadhvi Alapati",
+        "Dhairiya Kotian",
+        "Pranav S Kaimal",
+        "Ishaan",
+        "S. Gautham",
+        "P.H.V.S.S.KOUNDINYA",
+        "Manit Narula",
+        "Shivram Alackan"
+    ]
 };
 
 function makeSubmenu(value) {
