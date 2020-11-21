@@ -173,7 +173,7 @@ var namesBySquad = {
         "Aditya Singh",
         "Sanskriti Amidesh",
     ],
-    Squad51: ["Mahika", "Pranshu", "Vaidehi", "Isha"],
+    Squad51: ["Mahika", "Pranshu", "Vaidehi", "Isha","Ankita"],
     Squad52: [
         "Neev",
         "Aanya M Bafna",
