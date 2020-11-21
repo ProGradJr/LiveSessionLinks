@@ -200,7 +200,8 @@ var namesBySquad = {
         "VEER ZORAWAR",
         "Shrishti Ture",
         "Shree .s. baddi",
-        "N S Shrish Kumar"
+        "N S Shrish Kumar",
+        "Shreya"
     ],
     Squad55: ["Bhoomi Kunjwal",
         "Mourya G S",
