@@ -213,7 +213,9 @@ var namesBySquad = {
         "P.H.V.S.S.KOUNDINYA",
         "Manit Narula",
         "Shivram Alackan"
-    ]
+    ],
+    Squad56: ["A","B","C"],
+    Squad57:["A1","B1"]
 };
 
 function makeSubmenu(value) {
