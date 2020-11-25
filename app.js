@@ -215,7 +215,7 @@ var namesBySquad = {
         "Shivram Alackan"
     ],
     Squad56: ["A","B","C"],
-    Squad57:["A1","B1"]
+    Squad57:["Mehul","Deeptha"]
 };
 
 function makeSubmenu(value) {
