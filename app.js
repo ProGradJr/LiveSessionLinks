@@ -216,6 +216,7 @@ var namesBySquad = {
     ],
     Squad56: ["A","B","C"],
     Squad57:["Mehul","Deeptha"]
+    Squad57:["Kashish rathod","Zaad singh","Riya Leela Jacob","Arunima","Hima Narmin","Aditya Ajay Sankar","Samyak Bisht"]
 };
 
 function makeSubmenu(value) {
